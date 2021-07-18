@@ -1,0 +1,439 @@
+@import "style.scss";
+@import "default.scss";
+.modal {
+    position: absolute;
+    z-index: 67566677;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: map-get($map: $colors, $key:Darkgray );
+    background: rgba(0,0,0,0.2);
+    display: none;
+    
+
+};
+
+.modal-default {
+    width:85%;
+    text-align: left;
+    margin: auto;
+    border-radius: 0.8rem;
+    padding-left: 0.7rem;
+    padding-right:1rem;
+    padding-top: 1.5rem;
+    box-sizing: border-box;
+    font-size: $Fontsize;
+    box-shadow:0.1rem 0.1rem 2000px rgb(109, 100, 100); 
+    background-color: white;
+    position: absolute;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%,-26%);
+    color: map-get($map: $colors, $key:Darkgray );
+    @include for-tablet-up {
+        max-width: 75%;
+
+    };
+    @include for-desktop {
+        max-width: 50%;
+
+    };
+
+
+};
+.top-class {
+    display:flex ;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 1rem;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+
+   
+    .header4 {
+        color: black;
+        text-align: left;        
+        font-weight: $weight-700;
+        
+
+    };
+   
+   
+ 
+
+};
+p {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+}
+.no-reward {
+    width: 90%;
+    border: solid map-get($map: $colors, $key:Darkgray ) 0.005rem;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 1rem;
+    margin-bottom:1.5rem ;
+    border-radius: 0.8rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+
+
+     
+    
+
+   };
+.bamboo-reward {
+   
+        width: 90%;
+        border: solid map-get($map: $colors, $key:Darkgray ) 0.005rem;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom:1.5rem ;
+        border-radius: 0.8rem;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        padding-top: 1.2rem;
+        padding-bottom: 1.2rem;
+        
+       .containment {
+         font-weight: $weight-700;
+         .moneypledge {
+             color: black;
+         };
+
+           
+        };
+       
+    
+       };
+    
+
+.black-reward{
+        width: 90%;
+        border: solid map-get($map: $colors, $key:Darkgray ) 0.005rem;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom:1.5rem ;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        padding-top: 1.2rem;
+        padding-bottom: 1.2rem;
+
+        .containment {
+            font-weight: $weight-700;
+            .moneypledge {
+                color: black;
+            };
+   
+
+           };
+       
+    
+        
+    
+     };
+
+     .mahogany-reward {
+        width: 90%;
+        border: solid map-get($map: $colors, $key:Darkgray ) 0.005rem;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom:1.5rem ;
+        border-radius: 0.8rem;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        padding-top: 1.2rem;
+        padding-bottom: 1.2rem;
+
+        .containment {
+           font-weight: $weight-700;
+           .moneypledge {
+            color: black;
+        };
+         
+           
+        };
+       
+    
+        
+
+
+     };
+
+
+.select {
+    position: relative;
+
+.left-amount {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    @include for-tablet-up {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-right: 1rem;
+
+    };
+    
+
+    .amount-left {
+        font-weight: $weight-700;
+        color: black;
+
+    };
+
+
+};
+
+    
+};
+
+.modal-pledge {
+    text-align: center;
+    display: none;
+
+    .pledge-section {
+        
+        @include for-tablet-up {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            align-items: center;
+
+        };
+   
+   
+
+    hr {
+        height: 1px;
+        background-color: black;
+        border: none;
+       
+
+    };
+    
+
+form {
+
+    display: flex;
+    justify-content: space-around;
+    padding-top: 1rem;
+    .donation {
+        width: 40%;
+        height: 3rem;
+        border-radius:5rem;
+        border: solid map-get($map: $colors, $key:Darkgray ) 0.1rem;
+        position: relative;
+        text-align: left;
+        padding-left:1.5rem;
+        display: flex;
+        align-items: center;
+        .dollar {
+            font-weight: $weight-700;
+
+        };
+      
+
+    .pledge-text {
+        width: 30%;
+        height: 1rem;
+        padding:0.5rem ;
+        margin-left:1rem ;
+        border:none;
+        position: absolute;
+       
+
+        };
+    };
+    .btn {
+        width: 45%;
+        height: 3rem;
+        border-radius:5rem;
+        border: none; 
+        background: map-get($map: $colors, $key:Moderatecyan );
+        color: white;
+        font-weight: $weight-700;
+
+
+    };
+
+};
+
+
+
+};
+
+
+
+
+};
+/*hover effect for modal*/
+.select:hover {
+    border: solid map-get($map: $colors, $key:Moderatecyan ) 0.2rem;
+
+};
+// hover to reveal donation
+.no-reward:hover .noreward-pledge {
+    display: block;
+
+};
+
+
+.mahogany-reward:hover .mahogamy-pledge {
+    display: block;
+
+};
+.black-reward:hover .black-pledge{
+    display: block;
+
+};
+.bamboo-reward:hover .bamboo-pledge{
+    display:block ;
+
+};
+
+.modal-success-opacity {
+    position: absolute;
+    z-index: 2334444444;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: map-get($map: $colors, $key:Darkgray );
+    background: rgba(0,0,0,0.2);
+    display: none;
+
+    .modal-success {
+        width:85%;
+        text-align: center;
+        border-radius: 0.8rem;
+        padding-left: 0.7rem;
+        padding-right:0.7rem;
+        padding-top: 1.5rem;
+        box-sizing: border-box;
+        font-size: $Fontsize;
+        box-shadow:0.1rem 0.1rem 2000px rgb(109, 100, 100); 
+        background-color: white;
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%,-26%);
+        color: map-get($map: $colors, $key:Darkgray );
+        @include for-tablet-up {
+            max-width: 75%;
+    
+        };
+        @include for-desktop {
+            max-width: 50%;
+    
+        };
+        h3 {
+            color: black;
+
+        };
+        .got-it-btn {
+            padding: 1.7rem;
+            .got-it:hover{
+                background: map-get($map: $colors, $key:Darkcyan );
+
+            };
+
+            .got-it {
+                font-weight: $weight-700;
+                padding-left:2.2rem;
+                padding-right: 2.2rem;
+                padding-top: 1rem;
+                padding-bottom:0.8rem;
+                background-color: map-get($map: $colors, $key:Moderatecyan );
+                border-radius: 1.8rem;
+                color: white;
+                border: none;
+
+
+            };
+
+        };
+    
+
+    };
+
+};
+//styling custom radio
+.radio {
+
+    color:map-get($map: $colors, $key:Moderatecyan ); 
+    font-weight: bold;
+    font-size: 1rem;
+    display: grid;
+    grid-template-columns: min-content auto;
+    grid-gap:0.5rem;
+    
+    .radio-input {
+        display: flex;
+
+        input + .radio-control::before {
+            content: "";
+            width: 0.5rem;
+            height: 0.5rem;
+            box-shadow: inset 0.5rem 0.5rem currentColor;
+            border-radius: 50%;
+            transition: 180ms transform ease-in-out;
+            transform: scale(0);
+
+        };
+        input:checked + .radio-control::before {
+            transform: scale(1);
+
+        };
+        
+
+        input{
+            opacity: 0;
+            width: 0;
+            height: 0;
+           
+        };
+
+            .radio-control {
+                display:grid ;
+                place-items: center;
+                width: 1rem;
+                height: 1rem;
+                border-radius: 50%;
+                border: 0.1em solid currentColor;
+                transform: translateY(-0.05em);
+               
+            };
+            
+                  
+        
+
+    };
+   
+   
+    .radio-label{
+        line-height: 1;
+        @include for-tablet-up {
+            display: flex;
+
+        };
+        .moneypledge {
+           
+            @include for-tablet-up {
+                margin-left: 0.3rem;
+               
+    
+            };
+
+        };
+    };
+
+
+};
